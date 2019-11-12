@@ -21,7 +21,7 @@ class CreateMediablesTable extends Migration
 
             $table->string('mediable_type', 255);
 
-            $table->integer('contextual_type_id');
+            $table->integer('contextual_type_id')->default(0);
 
             $table->timestamps();
 
